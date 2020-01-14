@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_main)
 
+        Log.i(TAG, "Hello")
         val retrofitManger = OkHttpRetrofitManager.getInstance()
         retrofitManger.requestPosts()
             .observeOn(AndroidSchedulers.mainThread())
